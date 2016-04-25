@@ -1,0 +1,287 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DensityApplication.Master.MasterPage" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Density Application</title>
+    <link href="../css/Alert.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="../css/sb-admin.css" rel="stylesheet" type="text/css" />
+    <link href="../css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Morris Charts CSS -->
+    <link href="../css/plugins/morris.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Fonts -->
+    <link href="../css/radcss.css" rel="Stylesheet" type="text/css" />
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <%--<script src="../js/bootstrap.min.js" type="text/javascript"></script>--%>
+    <script src="../js/jquery.alerts.js" type="text/javascript"></script>
+    <%-- <script type="text/javascript" src="../js/jquery.js"></script>--%>
+  <%--  <script src="../js/plugins/morris/raphael.min.js" type="text/javascript"></script>--%>
+<%--    <script src="../js/plugins/morris/morris.min.js" type="text/javascript"></script>
+    <script src="../js/plugins/morris/morris-data.js" type="text/javascript"></script>--%>
+    <script type="text/javascript">
+        window.onload = window.history.forward(0);
+    </script>
+  
+  <%--  <script type="text/javascript">
+        $("#liCustomer").click(function () { $('#demo').show(); });
+    </script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+             <%--   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>--%>
+                <a class="navbar-brand" href="../../ModProject/FrmLandingPage.aspx">Home</a>
+
+                <asp:ImageButton ID="ImageButton1" runat="server" OnClientClick=""></asp:ImageButton>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+               <%-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>--%>
+             <%--   <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>--%>
+
+
+
+
+                <li class="dropdown">
+
+            
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <%--        <i class="fa fa-user"></i>--%>
+                    <telerik:RadBinaryImage runat="server" ID="imgPhoto"  AutoAdjustImageControlSize="false" Height="22px" Width="35px"   >
+                    </telerik:RadBinaryImage>
+                    <asp:Label ID="lblUserName" runat="server" Text=""></asp:Label> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                       <%-- <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>--%>
+                       <%-- <li class="divider"></li>--%>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i><asp:Button ID="btnLogOut" runat="server" Text="Log Out" BorderColor="White" BorderStyle="None" BackColor="White" ></asp:Button></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                <%--    <li id="liRegistration" class="active" runat="server">
+                        <a href="../../ModProject/FrmRegistration.aspx"><i class="fa fa-fw fa-dashboard"></i> Registration</a>
+                    </li>--%>
+                  <%--  <li>
+                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>--%>
+                   <%-- <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li>   --%>
+                    <li id="liSetUp" runat="server">
+                        <a class="" data-toggle="collapse" data-target="#demo" href="javascript:;">
+                        <i class="fa fa-fw fa-arrows-v"></i> 
+                        Density 
+                        <i class="fa fa-fw fa-caret-down"></i>
+                        </a>
+                        <ul id="demo" class="collapse" style="">
+              
+                           <li id="liCustomer" runat="server">
+                                <a href="../../ModProject/FrmCustomer.aspx">Customer</a>
+                            </li>
+                            <li id="liBilling" runat="server">
+                                <a href="../../ModProject/FrmBillingDetails.aspx">Billing Details</a>
+                            </li>
+                            <li id="liReport" runat="server">
+                                <a href="../../Report/frmInvoice.aspx">Report</a>
+                            </li>
+                             <li id="liUser" runat="server">
+                                <a href="../../Report/frmInvoiceReport.aspx">Invoice Report</a>
+                            </li>
+                             <li id="liUserZone" runat="server">
+                                <a href="../../ModProject/FrmUserZoneMapping.aspx">User Zone Mapping</a>
+                            </li>
+                            <%--<li id="liUserAccessMapping" runat="server">
+                                <a href="../../ModProject/FrmUserAccessMapping.aspx">Role and Rights</a>
+                            </li>
+                              <li id="liWorkingSlot" runat="server">
+                                <a href="../../ModProject/FrmWorkingSlot.aspx">Working Slot</a>
+                            </li>
+                             <li id="liWorkingDays" runat="server">
+                                <a href="../../ModProject/FrmWorkingDays.aspx">Working Days</a>
+                            </li>
+                             <li id="liMapWorkingHour" runat="server">
+                                <a href="../../ModProject/FrmMapWorkingHours.aspx">Map Working Hour</a>
+                            </li>
+                            <li id="liHoliday" runat="server">
+                                <a href="../../ModProject/FrmHolidays.aspx">Holidays</a>
+                            </li>
+                            <li id="liSetting" runat="server">
+                                <a href="../../ModProject/FrmSetting.aspx">Setting</a>
+                            </li>
+                             <li id="liDevice" runat="server">
+                                <a href="../../ModProject/FrmDevice.aspx">Device</a>
+                            </li>--%>
+                        </ul>
+                    </li>
+
+                     <%--<li id="liDashboard" runat="server">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1">
+                        <i class="fa fa-fw fa-arrows-v"></i> 
+                        Dashboard
+                        <i class="fa fa-fw fa-caret-down"></i>
+                        </a>
+                        <ul id="demo1" class="collapse">
+                         
+                          
+                           
+                         
+                        
+                        </ul>
+                    </li>--%>
+                     <%--<li id="liReport" runat="server">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1">
+                        <i class="fa fa-fw fa-arrows-v"></i> 
+                        Report
+                        <i class="fa fa-fw fa-caret-down"></i>
+                        </a>
+                        <ul id="Ul1" class="collapse">
+                         
+                          
+                           
+                         
+                        
+                        </ul>
+                    </li>--%>
+                    <%--
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li>--%>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <div id="page-wrapper" style="margin-top: -62px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    </form>
+</body>
+</html>

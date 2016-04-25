@@ -1,0 +1,36 @@
+﻿  #popup_container
+        {
+            width: 275px;
+            height: 125px;
+            background: white;
+            border: 1px solid black !important;
+        }
+        
+        #popup_title
+        {
+            background-color: #242424;
+            border-bottom: 1px solid;
+            color: #FFFFFF;
+            font-size: 21px;
+            padding-left: 4px;
+        }
+        
+        #popup_message
+        {
+            padding-left: 3px;
+            padding-top: 1px;
+            color: #0369ad;
+            height: 48px;
+        }
+        
+        #popup_panel
+        {
+            text-align: center;
+        }
+        
+        
+        .buttonClass
+        {
+            background-color: #F6F5F5;
+            color: #0369ad;
+        }

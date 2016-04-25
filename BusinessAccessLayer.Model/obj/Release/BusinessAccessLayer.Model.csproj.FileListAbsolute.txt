@@ -1,0 +1,4 @@
+C:\Users\ckulkamm\Desktop\22\18\DensityApplication\BusinessAccessLayer.Model\bin\Release\BusinessAccessLayer.Model.dll
+C:\Users\ckulkamm\Desktop\22\18\DensityApplication\BusinessAccessLayer.Model\bin\Release\BusinessAccessLayer.Model.pdb
+C:\Users\ckulkamm\Desktop\22\18\DensityApplication\BusinessAccessLayer.Model\obj\Release\BusinessAccessLayer.Model.dll
+C:\Users\ckulkamm\Desktop\22\18\DensityApplication\BusinessAccessLayer.Model\obj\Release\BusinessAccessLayer.Model.pdb
